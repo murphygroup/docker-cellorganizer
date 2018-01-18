@@ -10,3 +10,7 @@ branches:
 
 before_install:
 - docker build -t murphylab/cellorganizer .
+
+script:
+- docker images -a
+- docker containers -a 
