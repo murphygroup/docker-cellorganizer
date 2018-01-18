@@ -1,6 +1,6 @@
 # docker-cellorganizer
 
-![Build Status](https://travis-ci.org/icaoberg/docker-cellorganizer.svg?branch=master)
+[![Build Status](https://travis-ci.org/icaoberg/docker-cellorganizer.svg?branch=master)](https://travis-ci.org/icaoberg/docker-cellorganizer)
 ![Big Data](https://img.shields.io/badge/big%20data-true-blue.svg)
 [![GitHub issues](https://img.shields.io/github/issues/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/issues)
 [![GitHub forks](https://img.shields.io/github/forks/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/network)
