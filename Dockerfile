@@ -4,7 +4,7 @@ MAINTAINER Ivan E. Cao-Berg <icaoberg@andrew.cmu.edu>
 LABEL Description="CellOrganizer."
 LABEL Vendor="Murphy Lab in the Computational Biology Department at Carnegie Mellon University"
 LABEL Web="http://murphylab.cbd.cmu.edu"
-LABEL Version="2.6.0"
+LABEL Version="2.7.0"
 
 RUN echo "Installing Matlab MCR 2017b"
 RUN apt-get -qq update && apt-get -qq install -y \
