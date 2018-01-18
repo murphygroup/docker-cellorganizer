@@ -1,5 +1,7 @@
 sudo: required
 
+language: ruby
+
 services:
   - docker
 
@@ -14,3 +16,4 @@ before_install:
 script:
   - docker images -a
   - docker containers -a 
+  - docker run -d murphylab/cellorganizer /bin/sh -c "tree ."
