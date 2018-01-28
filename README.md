@@ -4,7 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/issues)
 [![GitHub forks](https://img.shields.io/github/forks/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/network)
 [![GitHub stars](https://img.shields.io/github/stars/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://raw.githubusercontent.com/icaoberg/docker-cellorganizer/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
 
 ## About CellOrganizer 
 
@@ -42,19 +42,26 @@ Cell types for which generative models for at least some organelles have been bu
 
 ## About the Docker container
 
-To build a container using the `Dockerfile` in this repository, run the command
+To build an image using the `Dockerfile` in this repository, run the command
 
 ```
 ➜ docker build -t "murphylab/cellorganizer" .
 ```
 
-The previous step should build a container
+The previous step should build an image
 
 ```
 ➜  docker container ls -a
 
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                        PORTS               NAMES
 48dde52f2bc8        murphylab/cellorganizer     "/bin/bash -c 'pyt..."   45 seconds ago      Exited (0) 39 seconds ago                         frosty_wescoff
+```
+
+To run a container using the image above
+
+```
+➜  docker run -i -t murphylab/cellorganizer
+icaoberg@frosty_wescoff:~$
 ```
 
 ---
