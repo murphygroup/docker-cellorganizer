@@ -61,7 +61,6 @@ To run a container using the image above
 
 ```
 ➜  docker run -i -t murphylab/cellorganizer
-icaoberg@frosty_wescoff:~$
 ```
 
 ---
