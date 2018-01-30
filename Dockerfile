@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM quay.io/bgruening/galaxy-base:latest
 
 MAINTAINER Ivan E. Cao-Berg <icaoberg@andrew.cmu.edu>
 LABEL Description="CellOrganizer."
@@ -34,10 +34,8 @@ ENV XAPPLRESDIR /opt/mcr/v92/X11/app-defaults
 # Configure environment
 ENV DEBIAN_FRONTEND noninteractive
 ENV SHELL /bin/bash
-ENV USERNAME murphylab
+ENV USERNAME galaxy
 ENV HOME /home/$USERNAME/
-ENV UID 1000
-RUN useradd -m -s /bin/bash -N -u $UID $USERNAME
 RUN if [ ! -d /home/$USERNAME/ ]; then mkdir /home/$USERNAME/; fi
 WORKDIR /home/$USERNAME/
 USER $USERNAME
