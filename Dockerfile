@@ -46,6 +46,8 @@ RUN echo "Downloading models" && cd ~/cellorganizer && wget -nc --quiet http://w
 
 RUN echo "Downloading images" && cd ~/cellorganizer && wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/images.tgz && tar -xvf images.tgz && rm images.tgz
 
+RUN echo "Downloading tools" && cd ~/cellorganizer && wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/tools.tgz && tar tools.tgz && rm tools.tgz
+
 RUN find . -type f -name "mccExcludedFiles.log" -exec rm -fv {} \;
 RUN find . -type f -name "*.m" -exec rm -fv {} \;
 RUN find . -type f -name "requiredMCRProducts.txt" -exec rm -fv {} \;
