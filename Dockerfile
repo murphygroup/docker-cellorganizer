@@ -19,8 +19,8 @@ RUN echo "Downloading CellOrganizer v2.6.0" && \
 	rm cellorganizer-v2.7.0-binaries.tgz && \
 	mv cellorganizer-binaries /opt
 ENV PATH="/opt/cellorganizer-binaries:$PATH"
-RUN which train
-RUN which synthesize	
+RUN chmod +x /opt/cellorganizer-binaries/train
+RUN chmod +x /opt/cellorganizer-binaries/synthesize
 ###############################################################################################
 
 ###############################################################################################
@@ -34,4 +34,10 @@ RUN echo "Downloading images" && \
 	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/cellorganizer-v2.7.0-images.tgz && \
 	tar -xvf cellorganizer-v2.7.0-images.tgz && \
 	rm -f cellorganizer-v2.7.0-images.tgz
+
+RUN echo "Downloading demos" && \
+	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/cellorganizer-v2.7.0-demos.tgz && \
+	tar -xvf cellorganizer-v2.7.0-demos.tgz && \
+	rm -f cellorganizer-v2.7.0-demos.tgz
+RUN find ~/cellorganizer -empty -exec rm -rfv {} \;
 ###############################################################################################
