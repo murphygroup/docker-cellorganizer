@@ -41,4 +41,5 @@ RUN echo "Downloading demos" && \
 	tar -xvf cellorganizer-v2.7.0-demos.tgz && \
 	rm -f cellorganizer-v2.7.0-demos.tgz
 RUN find ~/cellorganizer -empty -exec rm -rfv {} \;
+RUN find ~/cellorganizer/demos -name "*.sh" -exec chmod +x {} \;
 ###############################################################################################
