@@ -18,9 +18,10 @@ RUN echo "Downloading CellOrganizer v2.6.0" && \
 	tar -xvf cellorganizer-v2.7.0-binaries.tgz && \
 	rm cellorganizer-v2.7.0-binaries.tgz && \
 	mv cellorganizer-binaries /opt
-ENV PATH="/opt/cellorganizer-binaries:$PATH"
-RUN chmod +x /opt/cellorganizer-binaries/train
-RUN chmod +x /opt/cellorganizer-binaries/synthesize
+RUN chmod +x /opt/cellorganizer-binaries/img2slml
+RUN chmod +x /opt/cellorganizer-binaries/slml2img
+RUN ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/train
+RUN ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/synthesize
 ###############################################################################################
 
 ###############################################################################################
