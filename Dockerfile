@@ -40,10 +40,11 @@ RUN if [ ! -d /home/$USERNAME/ ]; then mkdir /home/$USERNAME/; fi
 WORKDIR /home/$USERNAME/
 USER $USERNAME
 
-RUN echo "Downloading CellOrganizer v2.6.0" && cd ~/ && wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/cellorganizer-v2.7.0-binaries.tgz && tar -xvf cellorganizer-v2.7.0-binaries.tgz
-RUN find . -type f -name "mccExcludedFiles.log" -exec rm -fv {} \;
-RUN find . -type f -name "*.m" -exec rm -fv {} \;
-RUN find . -type f -name "requiredMCRProducts.txt" -exec rm -fv {} \;
-RUN find . -type f -name "readme.txt" -exec rm -fv {} \;
-RUN find . -type f -name "run*.sh" -exec rm -fv {} \;
-RUN tree ./cellorganizer
+RUN echo "Downloading CellOrganizer v2.6.0" && \
+    cd ~/ && wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/cellorganizer-v2.7.0-binaries.tgz && \
+    tar -xvf cellorganizer-v2.7.0-binaries.tgz && \
+    if [ ! -d /opt ]; then mkdir /opt; fi && \
+    mv -v cellorganizer-binaries /opt && \
+    ln -s /opt/cellorganizer-binaries/train /usr/local/bin/train && \
+    ln -s /opt/cellorganizer-binaries/synthesize /usr/local/bin/synthesize
+
