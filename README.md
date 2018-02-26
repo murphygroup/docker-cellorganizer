@@ -49,7 +49,28 @@ Installing Docker is beyond the scope of this document. To learn about Docker Co
 * To install Docker-for-Mac, click [here](https://docs.docker.com/docker-for-mac/install/).
 * To install Docker-for-Windows, click [here](https://docs.docker.com/docker-for-windows/install/).
 
+### Installing Kitematic
+
+The easiest way to download an image and run a container is to use [Kitematic(https://kitematic.com/).
+
+* To install Kitematic, click [here](https://kitematic.com/docs/).
+
 ### About the Docker container
+
+#### Downloading image and running container using Kitematic
+
+Running Kitematic will open a window that looks like this
+
+![Kitematic](./images/kitematic.png)
+
+Use the searchbar to search for `cellorganizer`
+
+![CellOrganizer](./images/cellorganizer.png)
+
+and click `Create`.
+
+#### Downloading image and running container
+
 
 To build an image using the `Dockerfile` in this repository, run the command
 
