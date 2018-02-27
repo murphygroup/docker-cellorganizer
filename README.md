@@ -40,7 +40,37 @@ Cell types for which generative models for at least some organelles have been bu
 * OME-TIFF support. Included a new synthesis output options named 'OMETIFF' that saves a synthetic image as an OME-TIFF Bioformats.
 * T cell models. Included a new model class/type called standardized_voxels/standardized-map half-ellipsoid which is used to model the protein distribution of T cell movies, given annotations of the synapse.
 
-## About the Docker container
+## Docker
+
+### Installing Docker
+
+Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click [here](https://www.docker.com/community-edition).
+
+* To install Docker-for-Mac, click [here](https://docs.docker.com/docker-for-mac/install/).
+* To install Docker-for-Windows, click [here](https://docs.docker.com/docker-for-windows/install/).
+
+### Installing Kitematic
+
+The easiest way to download an image and run a container is to use [Kitematic(https://kitematic.com/).
+
+* To install Kitematic, click [here](https://kitematic.com/docs/).
+
+### About the Docker container
+
+#### Downloading image and running container using Kitematic
+
+Running Kitematic will open a window that looks like this
+
+![Kitematic](./images/kitematic.png)
+
+Use the searchbar to search for `cellorganizer`
+
+![CellOrganizer](./images/cellorganizer.png)
+
+and click `Create`.
+
+#### Downloading image and running container
+
 
 To build an image using the `Dockerfile` in this repository, run the command
 
@@ -62,6 +92,16 @@ To run a container using the image above
 ```
 ➜  docker run -i -t murphylab/cellorganizer
 ```
+
+#### Installed Tools
+
+The container comes with
+
+* CellOrganizer binaries
+* [Generative models](http://www.cellorganizer.org/model_repository/)
+* [Murphy Lab 2D/3D HeLa datasets](http://murphylab.web.cmu.edu/data/)
+* [BioFormats tools](https://downloads.openmicroscopy.org/bio-formats/)
+* [vim-as-an-IDE](https://github.com/icaoberg/vim-as-an-ide)
 
 ---
 
