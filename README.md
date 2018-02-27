@@ -50,6 +50,7 @@ Cell types for which generative models for at least some organelles have been bu
 * Added demo3D44 to show how to synthesize from a model class/type constructive_geomertry/half-ellipsoid
 * Added a battery of unit test for demos using Matlab testing framework
 * Added demo3D45 to show how to use OME.TIFF files with ROIs.
+* Added demo2D05, demo2D06, demo2D07 to show how to train and synthesize from a classtype framework/pca model
 
 #### CellOrganizer v2.6.0
 
