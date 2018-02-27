@@ -32,6 +32,25 @@ Cell types for which generative models for at least some organelles have been bu
 
 ### CellOrganizer Releases
 
+#### CellOrganizer v2.7.0
+
+##### Release Highlights
+
+###### Features
+
+* Included new model class/type: constructive_geometry/half-ellipsoid
+* Included new model class/type: framework/pca
+* Included support for OME.TIFF with regions of interest
+* Included bash scripts to run demos from compiled versions of the main functions
+
+###### Enhancements
+
+* img2slml now checks the combination of model class and type for every submodel before attempting to extract parameters from image 
+* Improved pipeline so that CellOrganizer will stop computation and report to user if no images are found in the path or if software fails to extract parameters.
+* Added demo3D44 to show how to synthesize from a model class/type constructive_geomertry/half-ellipsoid
+* Added a battery of unit test for demos using Matlab testing framework
+* Added demo3D45 to show how to use OME.TIFF files with ROIs.
+
 #### CellOrganizer v2.6.0
 
 ##### Release Highlights
