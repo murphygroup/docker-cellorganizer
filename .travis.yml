@@ -15,4 +15,4 @@ before_install:
 
 script:
   - docker images 
-  - docker run -d murphylab/cellorganizer /bin/sh -c "tree ."
+  - docker run -d murphylab/cellorganizer /bin/sh -c "cd cellorganizer/demos/2D/demo2D00/ && bash ./demo2D00.sh"
