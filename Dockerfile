@@ -20,8 +20,8 @@ RUN echo "Downloading CellOrganizer v2.6.0" && \
 	mv cellorganizer-binaries /opt
 RUN chmod +x /opt/cellorganizer-binaries/img2slml
 RUN chmod +x /opt/cellorganizer-binaries/slml2img
-RUN ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/train
-RUN ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/synthesize
+RUN ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/img2slml
+RUN ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/slml2img
 ###############################################################################################
 
 ###############################################################################################
