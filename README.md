@@ -36,7 +36,7 @@ Cell types for which generative models for at least some organelles have been bu
 
 ##### Features
 
-* Included new model class/type:constructive_geometry/half-ellipsoid
+* Included new model class/type: constructive_geometry/half-ellipsoid
 * Included new model class/type: framework/pca
 * Included support for OME.TIFF with regions of interest
 * Included bash scripts to run demos from compiled versions of the main functions
@@ -49,8 +49,6 @@ Cell types for which generative models for at least some organelles have been bu
 * Added a battery of unit test for demos using Matlab testing framework
 * Added demo3D45 to show how to use OME.TIFF files with ROIs.
 * Added demo2D05, demo2D06, demo2D07 to show how to train and synthesize from a classtype framework/pca model
-
-##### Release Highlights
 
 #### CellOrganizer v2.6.0
 
