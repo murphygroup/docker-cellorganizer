@@ -15,9 +15,7 @@ before_install:
 
 script:
   - docker images
-  # -td option runs the container in the background and prevents it from terminating
   - docker run -td murphylab/cellorganizer 
-  # store container_id in environment variable contid
-  - export contid=$(docker ps | awk '{ print $1,$2 }' | grep murphylab/cellorganizer | awk '{print $1}')
-  - docker exec $contid ./cellorganizer/demos/2D/demo2D01/demo2D01.sh
-  - docker exec $contid ./cellorganizer/demos/2D/demo2D00/demo2D02.sh
+  - export ID=$(docker ps | awk '{ print $1,$2 }' | grep murphylab/cellorganizer | awk '{print $1}')
+  - docker exec $ID ./cellorganizer/demos/2D/demo2D01/demo2D01.sh
+  - docker exec $ID ./cellorganizer/demos/2D/demo2D00/demo2D00.sh

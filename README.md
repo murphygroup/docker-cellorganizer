@@ -30,15 +30,54 @@ These models can be conditional upon each other. For example, for a given synthe
 
 Cell types for which generative models for at least some organelles have been built include human HeLa cells, mouse NIH 3T3 cells, and Arabidopsis protoplasts. Planned projects include mouse T lymphocytes and rat PC12 cells.
 
-### CellOrganizer Releases
+### CellOrganizer v2.7.0
 
-#### CellOrganizer v2.6.0
+#### Features
 
-##### Release Highlights
+* Included new model class/type: constructive_geometry/half-ellipsoid
+* Included new model class/type: framework/pca
+* Included support for OME.TIFF with regions of interest
+* Included bash scripts to run demos from compiled versions of the main functions
 
-* SBML Spatial 3 Level 1 draft 0.90 support. Included a new synthesis output option named 'SBMLSpatial' that saves a synthetic image as an SBML instance.
-* OME-TIFF support. Included a new synthesis output options named 'OMETIFF' that saves a synthetic image as an OME-TIFF Bioformats.
-* T cell models. Included a new model class/type called standardized_voxels/standardized-map half-ellipsoid which is used to model the protein distribution of T cell movies, given annotations of the synapse.
+#### Enhancements
+
+* img2slml now checks the combination of model class and type for every submodel before attempting to extract parameters from image 
+* Improved pipeline so that CellOrganizer will stop computation and report to user if no images are found in the path or if software fails to extract parameters.
+* Added demo3D44 to show how to synthesize from a model class/type constructive_geomertry/half-ellipsoid
+* Added a battery of unit test for demos using Matlab testing framework
+* Added demo3D45 to show how to use OME.TIFF files with ROIs.
+* Added demo2D05, demo2D06, demo2D07 to show how to train and synthesize from a classtype framework/pca model
+
+#### Demo List
+
+The following demo scripts are included in the image. 
+
+| Demo Name| Training | Synthesis |
+|----------|----------|-----------|
+| demo2D00 | FALSE    | TRUE      |
+| demo2D01 | TRUE     | FALSE     |
+| demo2D02 | FALSE    | TRUE      |
+| demo2D03 | TRUE     | FALSE     |
+| demo2D04 | TRUE     | FALSE     |
+| demo2D05 | TRUE     | FALSE     |
+| demo3D00 | FALSE    | TRUE      |
+| demo3D01 | FALSE    | TRUE      |
+| demo3D02 | FALSE    | TRUE      |
+| demo3D03 | FALSE    | TRUE      |
+| demo3D04 | FALSE    | TRUE      |
+| demo3D06 | FALSE    | TRUE      |
+| demo3D07 | FALSE    | TRUE      |
+| demo3D08 | FALSE    | TRUE      |
+| demo3D09 | FALSE    | TRUE      |
+| demo3D10 | FALSE    | TRUE      |
+| demo3D11 | TRUE     | FALSE     |
+| demo3D12 | TRUE     | FALSE     |
+| demo3D20 | TRUE     | FALSE     |
+| demo3D21 | TRUE     | FALSE     |
+
+The demos in the table above are the same demos included in the Matlab distribution.
+
+```
 
 ## Docker
 
@@ -93,7 +132,7 @@ To run a container using the image above
 ➜  docker run -i -t murphylab/cellorganizer
 ```
 
-#### Installed Tools
+#### Additional files
 
 The container comes with
 
