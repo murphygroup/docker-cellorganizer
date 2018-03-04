@@ -77,8 +77,6 @@ The following demo scripts are included in the image.
 
 The demos in the table above are the same demos included in the Matlab distribution.
 
-```
-
 ## Docker
 
 ### Installing Docker
