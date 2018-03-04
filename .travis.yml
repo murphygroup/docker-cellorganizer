@@ -20,10 +20,4 @@ script:
   # store container_id in environment variable contid
   - export contid=$(docker ps | awk '{ print $1,$2 }' | grep murphylab/cellorganizer | awk '{print $1}')
   - docker exec $contid ./cellorganizer/demos/2D/demo2D01/demo2D01.sh
-  - docker exec $contid ./cellorganizer/demos/2D/demo2D02/demo2D02.sh
-  - docker exec $contid ./cellorganizer/demos/2D/demo2D04/demo2D04.sh
-  - docker exec $contid ./cellorganizer/demos/2D/demo2D05/demo2D05.sh
-  - docker exec $contid ./cellorganizer/demos/2D/demo2D06/demo2D06.sh
-  - docker exec $contid ./cellorganizer/demos/3D/demo3D11/demo3D11.sh
-  - docker exec $contid ./cellorganizer/demos/3D/demo3D12/demo3D12.sh
-  - docker stop $contid
+  - docker exec $contid ./cellorganizer/demos/2D/demo2D00/demo2D02.sh
