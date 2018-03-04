@@ -50,13 +50,34 @@ Cell types for which generative models for at least some organelles have been bu
 * Added demo3D45 to show how to use OME.TIFF files with ROIs.
 * Added demo2D05, demo2D06, demo2D07 to show how to train and synthesize from a classtype framework/pca model
 
-#### CellOrganizer v2.6.0
+##### List of Demos
 
-##### Release Highlights
+The following demo scripts are included in the image. 
 
-* SBML Spatial 3 Level 1 draft 0.90 support. Included a new synthesis output option named 'SBMLSpatial' that saves a synthetic image as an SBML instance.
-* OME-TIFF support. Included a new synthesis output options named 'OMETIFF' that saves a synthetic image as an OME-TIFF Bioformats.
-* T cell models. Included a new model class/type called standardized_voxels/standardized-map half-ellipsoid which is used to model the protein distribution of T cell movies, given annotations of the synapse.
+| Demo     | Training | Synthesis |
+|----------|----------|-----------|
+| demo2D00 | FALSE    | TRUE      |
+| demo2D01 | TRUE     | FALSE     |
+| demo2D02 | FALSE    | TRUE      |
+| demo2D03 | TRUE     | FALSE     |
+| demo2D04 | TRUE     | FALSE     |
+| demo2D05 | TRUE     | FALSE     |
+| demo3D00 | FALSE    | TRUE      |
+| demo3D01 | FALSE    | TRUE      |
+| demo3D02 | FALSE    | TRUE      |
+| demo3D03 | FALSE    | TRUE      |
+| demo3D04 | FALSE    | TRUE      |
+| demo3D06 | FALSE    | TRUE      |
+| demo3D07 | FALSE    | TRUE      |
+| demo3D08 | FALSE    | TRUE      |
+| demo3D09 | FALSE    | TRUE      |
+| demo3D10 | FALSE    | TRUE      |
+| demo3D11 | TRUE     | FALSE     |
+| demo3D12 | TRUE     | FALSE     |
+| demo3D20 | TRUE     | FALSE     |
+| demo3D21 | TRUE     | FALSE     |
+
+The demos in the table above are the same demos included in the Matlab distribution.
 
 ## Docker
 
