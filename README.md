@@ -30,18 +30,16 @@ These models can be conditional upon each other. For example, for a given synthe
 
 Cell types for which generative models for at least some organelles have been built include human HeLa cells, mouse NIH 3T3 cells, and Arabidopsis protoplasts. Planned projects include mouse T lymphocytes and rat PC12 cells.
 
-### CellOrganizer Releases
+### CellOrganizer v2.7.0
 
-#### CellOrganizer v2.7.0
-
-##### Features
+#### Features
 
 * Included new model class/type: constructive_geometry/half-ellipsoid
 * Included new model class/type: framework/pca
 * Included support for OME.TIFF with regions of interest
 * Included bash scripts to run demos from compiled versions of the main functions
 
-##### Enhancements
+#### Enhancements
 
 * img2slml now checks the combination of model class and type for every submodel before attempting to extract parameters from image 
 * Improved pipeline so that CellOrganizer will stop computation and report to user if no images are found in the path or if software fails to extract parameters.
@@ -50,11 +48,11 @@ Cell types for which generative models for at least some organelles have been bu
 * Added demo3D45 to show how to use OME.TIFF files with ROIs.
 * Added demo2D05, demo2D06, demo2D07 to show how to train and synthesize from a classtype framework/pca model
 
-##### List of Demos
+#### Demo List
 
 The following demo scripts are included in the image. 
 
-| Demo     | Training | Synthesis |
+| Demo Name| Training | Synthesis |
 |----------|----------|-----------|
 | demo2D00 | FALSE    | TRUE      |
 | demo2D01 | TRUE     | FALSE     |
