@@ -43,6 +43,14 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
+wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo3D21.tgz
+
+mkdir -p ../../../images/HeLa/3D
+
+tar -xvf demo3D21.tgz -C ../../../images/HeLa/3D/
+
+rm -f demo3D21.tgz
+
 echo -e "options.documentation.description = 'This model has been trained using demo3D21 from CellOrganizer';
 options.documentation.dataset = '3D 3T3';
 options.documentation.dataset_reference = 'K. Huang and R. F. Murphy (2004) From Quantitative Microscopy to Automated Image Understanding. J. Biomed. Optics 9: 893-912.';

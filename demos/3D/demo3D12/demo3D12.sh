@@ -42,6 +42,14 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
+wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo3D12.tgz
+
+mkdir -p ../../../images/HeLa/3D
+
+tar -xvf demo3D12.tgz -C ../../../images/HeLa/3D/
+
+rm -f demo3D12.tgz
+
 echo -e "pattern = 'LAMP2';
 dimensionality = '3D';
 options.protein.class = 'lysosome';
