@@ -20,8 +20,8 @@ RUN echo "Downloading CellOrganizer v2.6.0" && \
 	mv cellorganizer-binaries /opt
 RUN chmod +x /opt/cellorganizer-binaries/img2slml
 RUN chmod +x /opt/cellorganizer-binaries/slml2img
-RUN ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/train
-RUN ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/synthesize
+RUN ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/img2slml
+RUN ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/slml2img
 ###############################################################################################
 
 ###############################################################################################
@@ -40,6 +40,6 @@ RUN echo "Downloading demos" && \
 	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/cellorganizer-v2.7.0-demos.tgz && \
 	tar -xvf cellorganizer-v2.7.0-demos.tgz && \
 	rm -f cellorganizer-v2.7.0-demos.tgz
-RUN find ~/cellorganizer -empty -exec rm -rfv {} \;
+#RUN find ~/cellorganizer -empty -exec rm -rfv {} \;
 RUN find ~/cellorganizer/demos -name "*.sh" -exec chmod +x {} \;
 ###############################################################################################

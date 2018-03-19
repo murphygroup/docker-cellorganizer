@@ -14,5 +14,8 @@ before_install:
   - docker build -t murphylab/cellorganizer .
 
 script:
-  - docker images 
-  - docker run -d murphylab/cellorganizer /bin/sh -c "cd cellorganizer/demos && ./2D/demo2D01/demo2D01.sh && ./2D/demo2D02/demo2D02.sh && ./2D/demo2D04/demo2D04.sh && ./2D/demo2D05/demo2D05.sh && ./2D/demo2D06/demo2D06.sh && ./2D/demo2D07/demo2D07.sh"
+  - docker images
+  - docker run -td murphylab/cellorganizer 
+  - export ID=$(docker ps | awk '{ print $1,$2 }' | grep murphylab/cellorganizer | awk '{print $1}')
+  - docker exec $ID ./cellorganizer/demos/2D/demo2D01/demo2D01.sh
+  - docker exec $ID ./cellorganizer/demos/2D/demo2D00/demo2D00.sh
