@@ -36,10 +36,11 @@ RUN echo "Downloading images" && \
 	tar -xvf cellorganizer-v2.7.0-images.tgz && \
 	rm -f cellorganizer-v2.7.0-images.tgz
 
-RUN echo "Downloading demos" && \
-	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/cellorganizer-v2.7.0-demos.tgz && \
-	tar -xvf cellorganizer-v2.7.0-demos.tgz && \
-	rm -f cellorganizer-v2.7.0-demos.tgz
-#RUN find ~/cellorganizer -empty -exec rm -rfv {} \;
-RUN find ~/cellorganizer/demos -name "*.sh" -exec chmod +x {} \;
+COPY demos cellorganizer/demos
+
+RUN find ~/cellorganizer -empty -exec rm -rfv {} \;
+
+USER root
+RUN find /home/murphylab/cellorganizer/demos -name "*.sh" -exec chmod +x {} \;
+USER murphylab
 ###############################################################################################
