@@ -39,6 +39,14 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
+wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo2D00.tgz
+
+mkdir -p ../../../images/HeLa/2D
+
+tar -xvf demo2D00.tgz -C ../../../images/HeLa/2D/
+
+rm -f demo2D00.tgz
+
 echo -e "filenames={'/home/murphylab/cellorganizer/models/2D/nucleolus.mat', '/home/murphylab/cellorganizer/models/2D/lysosome.mat', '/home/murphylab/cellorganizer/models/2D/endosome.mat', '/home/murphylab/cellorganizer/models/2D/mitochondrion.mat' };
 options.targetDirectory = pwd;
 options.prefix = 'img';
@@ -49,6 +57,6 @@ options.display = false;
 options.numberOfSynthesizedImages = 1;
 " > input.txt
 
-slml2img $(pwd)/input.txt
+#slml2img $(pwd)/input.txt
 
-file img/cell1/cell1.tiff
+#file img/cell1/cell1.tiff
