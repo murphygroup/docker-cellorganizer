@@ -38,6 +38,14 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
+wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo2D05.tgz
+
+mkdir -p ../../../images/HeLa/2D
+
+tar -xvf demo2D05.tgz -C ../../../images/HeLa/2D/
+
+rm -f demo2D05.tgz
+
 echo -e "options.verbose = true;
 options.debug = false;
 options.display = false;
