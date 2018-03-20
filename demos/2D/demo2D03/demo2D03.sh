@@ -40,14 +40,19 @@
 #
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
+directory=../../../images/HeLa/2D/LAM
 
-wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo2D03.tgz
+if [ ! -d "$directory" ]; then
 
-mkdir -p ../../../images/HeLa/2D
+	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo2D03.tgz
 
-tar -xvf demo2D03.tgz -C ../../../images/HeLa/2D/
+	mkdir -p ../../../images/HeLa/2D/LAM
 
-rm -f demo2D03.tgz
+	tar -xvf demo2D03.tgz -C ../../../images/HeLa/2D/LAM/
+
+	rm -f demo2D03.tgz
+
+fi
 
 echo -e "options.verbose = true;
 options.debug = true;
