@@ -45,13 +45,13 @@ directory=../../../images/HeLa/2D/LAM
 
 if [ ! -d "$directory" ]; then
 
-	wget -nc --quiet http://www.dynaexamples.com/examples-manual/ls-dyna_example.tgz
+	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo2D01.tgz
 
 	mkdir -p ../../../images/HeLa/2D/LAM
 
-	tar -xvf ls-dyna_example.tgz -C ../../../images/HeLa/2D/LAM/
+	tar -xvf demo2D01.tgz -C ../../../images/HeLa/2D/LAM/
 
-	rm -f ls-dyna_example.tgz
+	rm -f demo2D01.tgz
 
 fi
 

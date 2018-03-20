@@ -43,13 +43,19 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
-wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo3D20.tgz
+directory=../../../images/HeLa/2D/LAM
 
-mkdir -p ../../../images/HeLa/3D
+if [ ! -d "$directory" ]; then
 
-tar -xvf demo3D20.tgz -C ../../../images/HeLa/3D/
+	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo3D20.tgz
 
-rm -f demo3D20.tgz
+	mkdir -p ../../../images/HeLa/3D/processed
+
+	tar -xvf demo3D20.tgz -C ../../../images/HeLa/3D/processed/
+
+	rm -f demo3D20.tgz
+
+fi
 
 echo -e "dimensionality = '3D';
 options.verbose = true;
