@@ -38,10 +38,9 @@
 #
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
-echo -e "\
-directory = '/home/murphylab/cellorganizer/models/3D/';
-disp('Generating report using only protein parameters');
-instances = { [directory 'nuc.mat'], [directory 'lamp2.mat'] };\
-" > input.txt
 
-slml2report $(pwd)/input.txt
+DIRECTORY'/home/murphylab/cellorganizer/models/3D/';
+FILE1=$DIRECTORY"/nuc.mat"
+FILE2=$DIRECTORY"/lamp2.mat"
+
+slml2report $FILE1 $FILE2
