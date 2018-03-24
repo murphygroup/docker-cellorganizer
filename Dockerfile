@@ -38,8 +38,6 @@ RUN echo "Downloading images" && \
 
 COPY demos cellorganizer/demos
 
-RUN find ~/cellorganizer -empty -exec rm -rfv {} \;
-
 USER root
 RUN find /home/murphylab/cellorganizer/demos -name "*.sh" -exec chmod +x {} \;
 USER murphylab
