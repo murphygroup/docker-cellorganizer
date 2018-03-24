@@ -37,11 +37,6 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
-echo -e "\
-disp( 'demo3D47' );
-disp( 'The estimated running time is 1 minute. Please wait.' );
-directory = '/home/murphylab/cellorganizer/models/3D/diffeomorphic/';
-instance = [directory 'helamodel_9_16_15.mat'];
-" > input.txt
+FILE="/home/murphylab/cellorganizer/models/3D/diffeomorphic/helamodel_9_16_15.mat"
 
-slml2info $(pwd)/input.txt
+slml2info $FILE
