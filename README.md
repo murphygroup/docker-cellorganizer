@@ -8,7 +8,7 @@
 
 ## About CellOrganizer 
 
-![CellOrganizer Logo](http://cellorganizer.org/CellOrganizerLogo2-250.jpg)
+![CellOrganizer Logo](http://www.cellorganizer.org/wp-content/uploads/2017/08/CellOrganizerLogo2-250.jpg)
 
 The [CellOrganizer](http://cellorganizer.org/) project provides tools for
 
