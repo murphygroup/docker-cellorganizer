@@ -8,7 +8,7 @@
 
 ## About CellOrganizer 
 
-![CellOrganizer Logo](http://cellorganizer.org/CellOrganizerLogo2-250.jpg)
+![CellOrganizer Logo](http://www.cellorganizer.org/wp-content/uploads/2017/08/CellOrganizerLogo2-250.jpg)
 
 The [CellOrganizer](http://cellorganizer.org/) project provides tools for
 
@@ -54,26 +54,26 @@ The following demo scripts are included in the image.
 
 | Demo Name| Training | Synthesis |
 |----------|----------|-----------|
-| demo2D00 | FALSE    | TRUE      |
-| demo2D01 | TRUE     | FALSE     |
-| demo2D02 | FALSE    | TRUE      |
-| demo2D03 | TRUE     | FALSE     |
-| demo2D04 | TRUE     | FALSE     |
-| demo2D05 | TRUE     | FALSE     |
-| demo3D00 | FALSE    | TRUE      |
-| demo3D01 | FALSE    | TRUE      |
-| demo3D02 | FALSE    | TRUE      |
-| demo3D03 | FALSE    | TRUE      |
-| demo3D04 | FALSE    | TRUE      |
-| demo3D06 | FALSE    | TRUE      |
-| demo3D07 | FALSE    | TRUE      |
-| demo3D08 | FALSE    | TRUE      |
-| demo3D09 | FALSE    | TRUE      |
-| demo3D10 | FALSE    | TRUE      |
-| demo3D11 | TRUE     | FALSE     |
-| demo3D12 | TRUE     | FALSE     |
-| demo3D20 | TRUE     | FALSE     |
-| demo3D21 | TRUE     | FALSE     |
+| demo2D00 |          | :heavy_check_mark:      |
+| demo2D01 | :heavy_check_mark:     |           |
+| demo2D02 |          | :heavy_check_mark:      |
+| demo2D03 | :heavy_check_mark:     |           |
+| demo2D04 | :heavy_check_mark:     |           |
+| demo2D05 | :heavy_check_mark:     |           |
+| demo3D00 |          | :heavy_check_mark:      |
+| demo3D01 |          | :heavy_check_mark:      |
+| demo3D02 |          | :heavy_check_mark:      |
+| demo3D03 |          | :heavy_check_mark:      |
+| demo3D04 |          | :heavy_check_mark:      |
+| demo3D06 |          | :heavy_check_mark:      |
+| demo3D07 |          | :heavy_check_mark:      |
+| demo3D08 |          | :heavy_check_mark:      |
+| demo3D09 |          | :heavy_check_mark:      |
+| demo3D10 |          | :heavy_check_mark:      |
+| demo3D11 | :heavy_check_mark:     |           |
+| demo3D12 | :heavy_check_mark:     |           |
+| demo3D20 | :heavy_check_mark:     |           |
+| demo3D21 | :heavy_check_mark:     |           |
 
 The demos in the table above are the same demos included in the Matlab distribution.
 
