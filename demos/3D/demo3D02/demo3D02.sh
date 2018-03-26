@@ -37,7 +37,7 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
-wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo3D02.tgz
+wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo3D02.tgz
 
 mkdir -p ../../../images/HeLa/3D
 

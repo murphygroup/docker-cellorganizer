@@ -46,7 +46,7 @@ directory=../../../images/HeLa/2D/LAM
 
 if [ ! -d "$directory" ]; then
 
-	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/demo3D12.tgz
+	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo3D12.tgz
 
 	mkdir -p ../../../images/HeLa/3D/processed
 
