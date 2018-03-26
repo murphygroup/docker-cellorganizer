@@ -14,30 +14,26 @@ WORKDIR /home/murphylab
 USER root
 RUN echo "Downloading CellOrganizer v2.7.1" && \
 	cd ~/ && \
-	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/cellorganizer-v2.7.1-binaries.tgz && \
+	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/cellorganizer-v2.7.1-binaries.tgz && \
 	tar -xvf cellorganizer-v2.7.1-binaries.tgz && \
 	rm cellorganizer-v2.7.1-binaries.tgz && \
 	mv cellorganizer-binaries /opt && \
 	chmod +x /opt/cellorganizer-binaries/img2slml && \
-    chmod +x /opt/cellorganizer-binaries/slml2img && \
-    ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/img2slml && \
-    ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/slml2img
+	chmod +x /opt/cellorganizer-binaries/slml2img && \
+	ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/img2slml && \
+	ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/slml2img && \
+	ln -s /opt/cellorganizer-binaries/slml2report /usr/local/bin/slml2report && \
+	ln -s /opt/cellorganizer-binaries/slml2info /usr/local/bin/slml2info && \
 ###############################################################################################
 
 ###############################################################################################
 USER murphylab
 RUN echo "Downloading models" && \
-	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/cellorganizer-v2.7.1-models.tgz && \
+	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/cellorganizer-v2.7.1-models.tgz && \
 	tar -xvf cellorganizer-v2.7.1-models.tgz && \
 	rm -f cellorganizer-v2.7.1-models.tgz
 
-RUN echo "Downloading images" && \
-	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/cellorganizer-v2.7.1-images.tgz && \
-	tar -xvf cellorganizer-v2.7.1-images.tgz && \
-	rm -f cellorganizer-v2.7.1-images.tgz
-
 COPY demos cellorganizer/demos
-
 USER root
 RUN find /home/murphylab/cellorganizer/demos -name "*.sh" -exec chmod +x {} \;
 USER murphylab
