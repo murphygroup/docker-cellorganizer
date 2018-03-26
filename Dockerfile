@@ -17,11 +17,11 @@ RUN echo "Downloading CellOrganizer v2.7.1" && \
 	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/cellorganizer-v2.7.1-binaries.tgz && \
 	tar -xvf cellorganizer-v2.7.1-binaries.tgz && \
 	rm cellorganizer-v2.7.1-binaries.tgz && \
-	mv cellorganizer-binaries /opt
-RUN chmod +x /opt/cellorganizer-binaries/img2slml
-RUN chmod +x /opt/cellorganizer-binaries/slml2img
-RUN ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/img2slml
-RUN ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/slml2img
+	mv cellorganizer-binaries /opt && \
+	chmod +x /opt/cellorganizer-binaries/img2slml && \
+    chmod +x /opt/cellorganizer-binaries/slml2img && \
+    ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/img2slml && \
+    ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/slml2img
 ###############################################################################################
 
 ###############################################################################################
