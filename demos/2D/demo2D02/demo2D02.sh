@@ -44,10 +44,13 @@ options.compression = 'lzw';
 options.debug = false;
 options.verbose = true;
 options.display = false;
-filenames = {'/home/murphylab/cellorganizer/demos/demo2D01/lamp2.mat'};
-if ~exist( filenames{1} ) warning( [ 'File ' filename ' not found.' ] ); disp('Using alternative model present in this distribution.'); filenames = {'/home/murphylab/cellorganizer/models/2D/endosome.mat'}; end\
+filenames = {'/home/murphylab/cellorganizer/demos/2D/demo2D01/lamp2.mat'};
 " > input.txt
 
-if [ -f /home/murphylab/cellorganizer/demos/demo2D01/lamp2.mat ]; then
+if [ -f /home/murphylab/cellorganizer/demos/2D/demo2D01/lamp2.mat ]; then
 	slml2img $(pwd)/input.txt
+fi
+
+if [ -f $(pwd)/img/cell1/cell1.tif ]; then
+	file -f $(pwd)/img/cell1/cell1.tif
 fi
