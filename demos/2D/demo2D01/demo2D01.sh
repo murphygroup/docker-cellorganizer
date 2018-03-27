@@ -75,4 +75,7 @@ options.documentation.description = 'This model has been trained using demo2D01 
 " > input.txt
 
 img2slml $(pwd)/input.txt
-file $(pwd)/lamp2.mat
+
+if [ -f $(pwd)/lamp2.mat ]; then
+	file $(pwd)/lamp2.mat
+fi

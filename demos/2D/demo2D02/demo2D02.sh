@@ -48,4 +48,6 @@ filenames = {'/home/murphylab/cellorganizer/demos/demo2D01/lamp2.mat'};
 if ~exist( filenames{1} ) warning( [ 'File ' filename ' not found.' ] ); disp('Using alternative model present in this distribution.'); filenames = {'/home/murphylab/cellorganizer/models/2D/endosome.mat'}; end\
 " > input.txt
 
-slml2img $(pwd)/input.txt
+if [ -f /home/murphylab/cellorganizer/demos/demo2D01/lamp2.mat ]; then
+	slml2img $(pwd)/input.txt
+fi

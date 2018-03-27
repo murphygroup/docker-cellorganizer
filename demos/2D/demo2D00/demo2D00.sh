@@ -51,4 +51,6 @@ options.numberOfSynthesizedImages = 1;
 
 slml2img $(pwd)/input.txt
 
-file img/cell1/cell1.tiff
+if [ -f $(pwd)/img/cell1/cell1.tiff ]; then
+	file $(pwd)/img/cell1/cell1.tiff
+fi
