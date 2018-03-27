@@ -38,5 +38,6 @@ RUN echo "Downloading models" && \
 COPY demos cellorganizer/demos
 USER root
 RUN find /home/murphylab/cellorganizer/demos -name "*.sh" -exec chmod +x {} \;
+RUN chown -Rv murphylab:users /home/murphylab/cellorganizer
 USER murphylab
 ###############################################################################################
