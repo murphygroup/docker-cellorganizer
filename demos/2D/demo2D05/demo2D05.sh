@@ -41,15 +41,10 @@
 directory=../../../images/HeLa/2D/LAM
 
 if [ ! -d "$directory" ]; then
-
-	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo2D05.tgz
-
+	wget -nc http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo2D05.tgz
 	mkdir -p ../../../images/HeLa/2D/LAM
-
 	tar -xvf demo2D05.tgz -C ../../../images/HeLa/2D/LAM/
-
 	rm -f demo2D05.tgz
-
 fi
 
 echo -e "options.verbose = true;
@@ -79,3 +74,7 @@ options.train.flag = 'framework';\
 " > input.txt
 
 img2slml $(pwd)/input.txt
+
+if [ -f $(pwd)/lamp2.mat ]; then
+	$(pwd)/lamp2.mat
+fi

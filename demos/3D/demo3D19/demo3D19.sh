@@ -39,7 +39,7 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
-DIRECTORY'/home/murphylab/cellorganizer/models/3D/';
+DIRECTORY='/home/murphylab/cellorganizer/models/3D/';
 FILE1=$DIRECTORY"/nuc.mat"
 FILE2=$DIRECTORY"/lamp2.mat"
 

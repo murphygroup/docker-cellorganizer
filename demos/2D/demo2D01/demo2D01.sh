@@ -41,18 +41,12 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
-directory=../../../images/HeLa/2D/LAM
-
-if [ ! -d "$directory" ]; then
-
+DIRECTORY=../../../images/HeLa/2D/LAM
+if [ ! -d "$DIRECTORY" ]; then
 	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo2D01.tgz
-
 	mkdir -p ../../../images/HeLa/2D/LAM
-
 	tar -xvf demo2D01.tgz -C ../../../images/HeLa/2D/LAM/
-
 	rm -f demo2D01.tgz
-
 fi
 
 echo -e "\
@@ -81,3 +75,7 @@ options.documentation.description = 'This model has been trained using demo2D01 
 " > input.txt
 
 img2slml $(pwd)/input.txt
+
+if [ -f $(pwd)/lamp2.mat ]; then
+	file $(pwd)/lamp2.mat
+fi

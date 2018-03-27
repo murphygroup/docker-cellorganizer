@@ -20,10 +20,12 @@ RUN echo "Downloading CellOrganizer v2.7.1" && \
 	mv cellorganizer-binaries /opt && \
 	chmod +x /opt/cellorganizer-binaries/img2slml && \
 	chmod +x /opt/cellorganizer-binaries/slml2img && \
+	chmod +x /opt/cellorganizer-binaries/slml2report && \
+	chmod +x /opt/cellorganizer-binaries/slml2info && \
 	ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/img2slml && \
 	ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/slml2img && \
 	ln -s /opt/cellorganizer-binaries/slml2report /usr/local/bin/slml2report && \
-	ln -s /opt/cellorganizer-binaries/slml2info /usr/local/bin/slml2info && \
+	ln -s /opt/cellorganizer-binaries/slml2info /usr/local/bin/slml2info
 ###############################################################################################
 
 ###############################################################################################
@@ -36,5 +38,6 @@ RUN echo "Downloading models" && \
 COPY demos cellorganizer/demos
 USER root
 RUN find /home/murphylab/cellorganizer/demos -name "*.sh" -exec chmod +x {} \;
+RUN chown -Rv murphylab:users /home/murphylab
 USER murphylab
 ###############################################################################################
