@@ -45,15 +45,10 @@
 directory=../../../images/HeLa/2D/LAM
 
 if [ ! -d "$directory" ]; then
-
 	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo3D12.tgz
-
 	mkdir -p ../../../images/HeLa/3D/processed
-
 	tar -xvf demo3D12.tgz -C ../../../images/HeLa/3D/processed/
-
 	rm -f demo3D12.tgz
-
 fi
 
 echo -e "pattern = 'LAMP2';
@@ -84,7 +79,11 @@ proteinImagesDirectoryPath = [directory filesep 'LAM*cell[1-30]*ch2*.tif'];
 options.masks = [directory filesep 'LAM*cell[1-30]*mask*.tif'];
 options.train.flag = 'all';
 options.model.resolution=[0.049, 0.049, 0.2000];
-options.model.filename = 'LAMP2.xml';\
-" > input.txt
+options.model.filename = 'LAMP2.xml';" > input.txt
 
 img2slml $(pwd)/input.txt
+
+if [ ! -f $(pwd)/lamp2.mat ];
+	echo "File "$(pwd)"/lamp2.mat does not exist"
+	exit -1
+fi
