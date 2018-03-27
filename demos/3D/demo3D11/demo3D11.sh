@@ -44,15 +44,10 @@
 directory=../../../images/HeLa/2D/LAM
 
 if [ ! -d "$directory" ]; then
-
 	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo3D11.tgz
-
 	mkdir -p ../../../images/HeLa/3D/processed
-
 	tar -xvf demo3D11.tgz -C ../../../images/HeLa/3D/processed/
-
 	rm -f demo3D11.tgz
-
 fi
 
 echo -e "options.sampling.method = 'disc';
@@ -84,7 +79,11 @@ options.documentation.author = 'Murphy Lab';
 options.documentation.email = 'murphy@cmu.edu';
 options.documentation.website = 'murphy@cmu.edu';
 options.documentation.description = 'This is the framework model is the result from demo3D11.';
-options.documentation.date = date;\
-" > input.txt
+options.documentation.date = date;" > input.txt
 
 img2slml $(pwd)/input.txt
+
+if [ ! -f $(pwd)/3D_HeLa_framework.mat ];
+	echo "File "$(pwd)"/3D_HeLa_framework.mat does not exist"
+	exit -1
+fi
