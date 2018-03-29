@@ -57,12 +57,10 @@ The following demo scripts are included in the image.
 | demo2D00 |          | :heavy_check_mark:      |
 | demo2D01 | :heavy_check_mark:     |           |
 | demo2D02 |          | :heavy_check_mark:      |
-| demo2D03 | :heavy_check_mark:     |           |
 | demo2D04 | :heavy_check_mark:     |           |
 | demo2D05 | :heavy_check_mark:     |           |
 | demo3D00 |          | :heavy_check_mark:      |
 | demo3D01 |          | :heavy_check_mark:      |
-| demo3D02 |          | :heavy_check_mark:      |
 | demo3D03 |          | :heavy_check_mark:      |
 | demo3D04 |          | :heavy_check_mark:      |
 | demo3D06 |          | :heavy_check_mark:      |
@@ -72,8 +70,9 @@ The following demo scripts are included in the image.
 | demo3D10 |          | :heavy_check_mark:      |
 | demo3D11 | :heavy_check_mark:     |           |
 | demo3D12 | :heavy_check_mark:     |           |
+| demo3D19 |      |           |
 | demo3D20 | :heavy_check_mark:     |           |
-| demo3D21 | :heavy_check_mark:     |           |
+| demo3D47 |      |           |
 
 The demos in the table above are the same demos included in the Matlab distribution.
 
