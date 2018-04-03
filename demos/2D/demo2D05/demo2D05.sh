@@ -47,7 +47,8 @@ if [ ! -d "$directory" ]; then
 	rm -f demo2D05.tgz
 fi
 
-echo -e "options.verbose = true;
+echo -e "\
+options.verbose = true;
 options.debug = false;
 options.display = false;
 options.model.name = 'demo2D05';
