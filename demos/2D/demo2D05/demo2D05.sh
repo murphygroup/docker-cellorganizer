@@ -76,5 +76,5 @@ options.train.flag = 'framework';\
 img2slml $(pwd)/input.txt
 
 if [ -f $(pwd)/lamp2.mat ]; then
-	$(pwd)/lamp2.mat
+	file $(pwd)/lamp2.mat
 fi
