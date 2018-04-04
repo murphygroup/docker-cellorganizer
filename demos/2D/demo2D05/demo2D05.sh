@@ -38,21 +38,17 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
-directory=../../../images/HeLa/2D/LAM
+DIRECTORY=../../../images/HeLa/2D/LAM
 
-if [ ! -d "$directory" ]; then
-
-	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo2D05.tgz
-
+if [ ! -d "$DIRECTORY" ]; then
+	wget -nc http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo2D05.tgz
 	mkdir -p ../../../images/HeLa/2D/LAM
-
 	tar -xvf demo2D05.tgz -C ../../../images/HeLa/2D/LAM/
-
 	rm -f demo2D05.tgz
-
 fi
 
-echo -e "options.verbose = true;
+echo -e "\
+options.verbose = true;
 options.debug = false;
 options.display = false;
 options.model.name = 'demo2D05';
@@ -62,7 +58,7 @@ options.nucleus.type = 'pca';
 options.cell.class = 'framework';
 options.cell.type = 'pca';
 options.latent_dim = 15;
-directory = '/home/murphylab/cellorganizer/images/HeLa/2D/LAM';
+directory = '/home/murphylab/cellorganizer/images/HeLa/2D/LAM/';
 dnaImagesDirectoryPath = [ directory filesep 'orgdna' filesep 'cell*.tif' ];
 cellImagesDirectoryPath = [ directory filesep 'orgcell' filesep 'cell*.tif' ];
 proteinImagesDirectoryPath = [];
@@ -79,3 +75,7 @@ options.train.flag = 'framework';\
 " > input.txt
 
 img2slml $(pwd)/input.txt
+
+if [ -f $(pwd)/lamp2.mat ]; then
+	file $(pwd)/lamp2.mat
+fi

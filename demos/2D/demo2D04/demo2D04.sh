@@ -44,15 +44,10 @@
 directory=../../../images/HeLa/2D/LAM
 
 if [ ! -d "$directory" ]; then
-
 	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo2D04.tgz
-
 	mkdir -p ../../../images/HeLa/2D/LAM
-
 	tar -xvf demo2D04.tgz -C ../../../images/HeLa/2D/LAM/
-
 	rm -f demo2D04.tgz
-
 fi
 
 echo -e "options.verbose = true;
@@ -85,3 +80,7 @@ options.model.diffeomorphic.com_align = 'nuc';\
 " > input.txt
 
 img2slml $(pwd)/input.txt
+
+if [ -f $(pwd)/lamp2.mat ]; then
+	file $(pwd)/lamp2.mat
+fi

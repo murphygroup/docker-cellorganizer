@@ -43,7 +43,7 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
-directory=../../../images/HeLa/2D/LAM
+directory=../../../images/HeLa/3D/processed
 
 if [ ! -d "$directory" ]; then
 
