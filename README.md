@@ -30,6 +30,22 @@ These models can be conditional upon each other. For example, for a given synthe
 
 Cell types for which generative models for at least some organelles have been built include human HeLa cells, mouse NIH 3T3 cells, and Arabidopsis protoplasts. Planned projects include mouse T lymphocytes and rat PC12 cells.
 
+### CellOrganizer v2.7.1
+
+#### Features
+
+* Created method slml2info to replace model2info. The method creates a report with useful information from a model file. Method writes report with Matlab Publisher. When method is deployed, then it generates a report in Markdown.
+* Created method slml2report. The method creates a report comparing two model files. Method writes report with Matlab Publisher. When method is deployed, then it generates a report in Markdown.
+* Created demos demo2D08 and demo2D09 to show how to make a report from a PCA framework model.
+
+##### Enhancements
+
+* Main methods slml2img, slml2info, slml2report and img2slml have been optimized for Matlab Compiler for release with CellOrganizer for Docker.
+
+##### Fixes
+
+* Fixed problem with demo3D46. Unable to synthesize image from CSGO model when combined with a vesicle model.
+
 ### CellOrganizer v2.7.0
 
 #### Features
@@ -54,12 +70,12 @@ The following demo scripts are included in the image.
 
 | Demo Name| Training | Synthesis |
 |----------|----------|-----------|
-| demo2D00 |          | :heavy_check_mark:      |
-| demo2D01 | :heavy_check_mark:     |           |
-| demo2D02 |          | :heavy_check_mark:      |
-| demo2D04 | :heavy_check_mark:     |           |
-| demo2D05 | :heavy_check_mark:     |           |
-| demo3D00 |          | :heavy_check_mark:      |
+| [demo2D00](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D00/) |          | :heavy_check_mark:      |
+| [demo2D01](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D01/) | :heavy_check_mark:     |           |
+| [demo2D02](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D02/) |          | :heavy_check_mark:      |
+| [demo2D04](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D04/) | :heavy_check_mark:     |           |
+| [demo2D05](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D05/) | :heavy_check_mark:     |           |
+| [demo3D00](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D00/) |          | :heavy_check_mark:      |
 | demo3D01 |          | :heavy_check_mark:      |
 | demo3D03 |          | :heavy_check_mark:      |
 | demo3D04 |          | :heavy_check_mark:      |
@@ -67,7 +83,6 @@ The following demo scripts are included in the image.
 | demo3D07 |          | :heavy_check_mark:      |
 | demo3D08 |          | :heavy_check_mark:      |
 | demo3D09 |          | :heavy_check_mark:      |
-| demo3D10 |          | :heavy_check_mark:      |
 | demo3D11 | :heavy_check_mark:     |           |
 | demo3D12 | :heavy_check_mark:     |           |
 | demo3D19 |      |           |
