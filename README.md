@@ -38,11 +38,11 @@ Cell types for which generative models for at least some organelles have been bu
 * Created method slml2report. The method creates a report comparing two model files. Method writes report with Matlab Publisher. When method is deployed, then it generates a report in Markdown.
 * Created demos demo2D08 and demo2D09 to show how to make a report from a PCA framework model.
 
-##### Enhancements
+#### Enhancements
 
 * Main methods slml2img, slml2info, slml2report and img2slml have been optimized for Matlab Compiler for release with CellOrganizer for Docker.
 
-##### Fixes
+#### Fixes
 
 * Fixed problem with demo3D46. Unable to synthesize image from CSGO model when combined with a vesicle model.
 
@@ -76,18 +76,18 @@ The following demo scripts are included in the image.
 | [demo2D04](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D04/) | :heavy_check_mark:     |           |
 | [demo2D05](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D05/) | :heavy_check_mark:     |           |
 | [demo3D00](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D00/) |          | :heavy_check_mark:      |
-| demo3D01 |          | :heavy_check_mark:      |
-| demo3D03 |          | :heavy_check_mark:      |
-| demo3D04 |          | :heavy_check_mark:      |
-| demo3D06 |          | :heavy_check_mark:      |
-| demo3D07 |          | :heavy_check_mark:      |
-| demo3D08 |          | :heavy_check_mark:      |
-| demo3D09 |          | :heavy_check_mark:      |
-| demo3D11 | :heavy_check_mark:     |           |
-| demo3D12 | :heavy_check_mark:     |           |
-| demo3D19 |      |           |
-| demo3D20 | :heavy_check_mark:     |           |
-| demo3D47 |      |           |
+| [demo3D01](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D01/) |          | :heavy_check_mark:      |
+| [demo3D03](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D03/) |          | :heavy_check_mark:      |
+| [demo3D04](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D04/) |          | :heavy_check_mark:      |
+| [demo3D06](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D06/) |          | :heavy_check_mark:      |
+| [demo3D07](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D07/) |          | :heavy_check_mark:      |
+| [demo3D08](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D08/) |          | :heavy_check_mark:      |
+| [demo3D09](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D09/) |          | :heavy_check_mark:      |
+| [demo3D11](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D11/) | :heavy_check_mark:     |           |
+| [demo3D12](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D12/) | :heavy_check_mark:     |           |
+| [demo3D19](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D19/) |      |           |
+| [demo3D20](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D20/) | :heavy_check_mark:     |           |
+| [demo3D47](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D47/) |      |           |
 
 The demos in the table above are the same demos included in the Matlab distribution.
 
