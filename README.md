@@ -1,6 +1,7 @@
 # docker-cellorganizer
 
 [![Build Status](https://travis-ci.org/icaoberg/docker-cellorganizer.svg?branch=master)](https://travis-ci.org/icaoberg/docker-cellorganizer)
+[![Release Status](https://img.shields.io/badge/release-v2.7.1-red.svg)](http://www.cellorganizer.org/)
 [![GitHub issues](https://img.shields.io/github/issues/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/issues)
 [![GitHub forks](https://img.shields.io/github/forks/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/network)
 [![GitHub stars](https://img.shields.io/github/stars/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/stargazers)
@@ -65,26 +66,24 @@ The following demo scripts are included in the image.
 
 | Demo Name| Training | Synthesis |
 |----------|----------|-----------|
-| demo2D00 |          | :heavy_check_mark:      |
-| demo2D01 | :heavy_check_mark:     |           |
-| demo2D02 |          | :heavy_check_mark:      |
-| demo2D03 | :heavy_check_mark:     |           |
-| demo2D04 | :heavy_check_mark:     |           |
-| demo2D05 | :heavy_check_mark:     |           |
-| demo3D00 |          | :heavy_check_mark:      |
-| demo3D01 |          | :heavy_check_mark:      |
-| demo3D02 |          | :heavy_check_mark:      |
-| demo3D03 |          | :heavy_check_mark:      |
-| demo3D04 |          | :heavy_check_mark:      |
-| demo3D06 |          | :heavy_check_mark:      |
-| demo3D07 |          | :heavy_check_mark:      |
-| demo3D08 |          | :heavy_check_mark:      |
-| demo3D09 |          | :heavy_check_mark:      |
-| demo3D10 |          | :heavy_check_mark:      |
-| demo3D11 | :heavy_check_mark:     |           |
-| demo3D12 | :heavy_check_mark:     |           |
-| demo3D20 | :heavy_check_mark:     |           |
-| demo3D21 | :heavy_check_mark:     |           |
+| [demo2D00](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D00/) |          | :heavy_check_mark:      |
+| [demo2D01](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D01/) | :heavy_check_mark:     |           |
+| [demo2D02](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D02/) |          | :heavy_check_mark:      |
+| [demo2D04](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D04/) | :heavy_check_mark:     |           |
+| [demo2D05](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D05/) | :heavy_check_mark:     |           |
+| [demo3D00](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D00/) |          | :heavy_check_mark:      |
+| [demo3D01](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D01/) |          | :heavy_check_mark:      |
+| [demo3D03](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D03/) |          | :heavy_check_mark:      |
+| [demo3D04](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D04/) |          | :heavy_check_mark:      |
+| [demo3D06](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D06/) |          | :heavy_check_mark:      |
+| [demo3D07](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D07/) |          | :heavy_check_mark:      |
+| [demo3D08](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D08/) |          | :heavy_check_mark:      |
+| [demo3D09](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D09/) |          | :heavy_check_mark:      |
+| [demo3D11](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D11/) | :heavy_check_mark:     |           |
+| [demo3D12](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D12/) | :heavy_check_mark:     |           |
+| [demo3D19](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D19/) |      |           |
+| [demo3D20](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D20/) | :heavy_check_mark:     |           |
+| [demo3D47](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D47/) |      |           |
 
 The demos in the table above are the same demos included in the Matlab distribution.
 
@@ -109,11 +108,11 @@ The easiest way to download an image and run a container is to use [Kitematic(ht
 
 Running Kitematic will open a window that looks like this
 
-![Kitematic](./images/kitematic.png)
+![Kitematic](https://raw.githubusercontent.com/icaoberg/docker-cellorganizer/master/images/kitematic.png)
 
 Use the searchbar to search for `cellorganizer`
 
-![CellOrganizer](./images/cellorganizer.png)
+![CellOrganizer](https://raw.githubusercontent.com/icaoberg/docker-cellorganizer/master/images/cellorganizer.png)
 
 and click `Create`.
 
@@ -155,6 +154,6 @@ The container comes with
 
 Support for [CellOrganizer](http://cellorganizer.org/) has been provided by grants GM075205, GM090033 and GM103712 from the [National Institute of General Medical Sciences](http://www.nigms.nih.gov/), grants MCB1121919 and MCB1121793 from the [U.S. National Science Foundation](http://nsf.gov/), by a Forschungspreis from the [Alexander von Humboldt Foundation](http://www.humboldt-foundation.de/), and by the [Freiburg Institute for Advanced Studies](http://www.frias.uni-freiburg.de/lifenet?set_language=en).
 
-[![MMBioS](http://cellorganizer.org/MMBioSlogo.gif)](http://www.mmbios.org)
+[![MMBioS](https://i1.wp.com/www.cellorganizer.org/wp-content/uploads/2017/08/MMBioSlogo-e1503517857313.gif?h=60)](http://www.mmbios.org)
 
 Copyright © 2007-2018 by the [Murphy Lab](http://murphylab.web.cmu.edu) at the [Computational Biology Department](http://www.cbd.cmu.edu) in [Carnegie Mellon University](http://www.cmu.edu)

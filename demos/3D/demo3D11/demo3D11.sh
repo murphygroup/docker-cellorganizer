@@ -41,7 +41,7 @@
 # For additional information visit http://murphylab.web.cmu.edu or
 # send email to murphy@cmu.edu
 
-directory=../../../images/HeLa/2D/LAM
+directory=../../../images/HeLa/3D/processed
 
 if [ ! -d "$directory" ]; then
 	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/images/demo3D11.tgz
@@ -83,7 +83,7 @@ options.documentation.date = date;" > input.txt
 
 img2slml $(pwd)/input.txt
 
-if [ ! -f $(pwd)/3D_HeLa_framework.mat ];
+if [ ! -f $(pwd)/3D_HeLa_framework.mat ]; then
 	echo "File "$(pwd)"/3D_HeLa_framework.mat does not exist"
 	exit -1
 fi
