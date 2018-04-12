@@ -66,23 +66,23 @@ The following demo scripts are included in the image.
 
 | Demo Name| Training | Synthesis |
 |----------|----------|-----------|
-| [demo2D00](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D00/) |          | :heavy_check_mark:      |
-| [demo2D01](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D01/) | :heavy_check_mark:     |           |
-| [demo2D02](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D02/) |          | :heavy_check_mark:      |
-| [demo2D04](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D04/) | :heavy_check_mark:     |           |
-| [demo2D05](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D05/) | :heavy_check_mark:     |           |
-| [demo3D00](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D00/) |          | :heavy_check_mark:      |
-| [demo3D01](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D01/) |          | :heavy_check_mark:      |
-| [demo3D03](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D03/) |          | :heavy_check_mark:      |
-| [demo3D04](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D04/) |          | :heavy_check_mark:      |
-| [demo3D06](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D06/) |          | :heavy_check_mark:      |
-| [demo3D07](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D07/) |          | :heavy_check_mark:      |
-| [demo3D08](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D08/) |          | :heavy_check_mark:      |
-| [demo3D09](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D09/) |          | :heavy_check_mark:      |
-| [demo3D11](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D11/) | :heavy_check_mark:     |           |
-| [demo3D12](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D12/) | :heavy_check_mark:     |           |
+| [demo2D00](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D00/) |          |            X            |
+| [demo2D01](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D01/) |            X           |           |
+| [demo2D02](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D02/) |          |            X            |
+| [demo2D04](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D04/) |            X           |           |
+| [demo2D05](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo2D05/) |            X           |           |
+| [demo3D00](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D00/) |          |            X            |
+| [demo3D01](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D01/) |          |            X            |
+| [demo3D03](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D03/) |          |            X            |
+| [demo3D04](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D04/) |          |            X            |
+| [demo3D06](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D06/) |          |            X            |
+| [demo3D07](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D07/) |          |            X            |
+| [demo3D08](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D08/) |          |            X            |
+| [demo3D09](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D09/) |          |            X            |
+| [demo3D11](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D11/) |            X           |           |
+| [demo3D12](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D12/) |            X           |           |
 | [demo3D19](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D19/) |      |           |
-| [demo3D20](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D20/) | :heavy_check_mark:     |           |
+| [demo3D20](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D20/) |            X           |           |
 | [demo3D47](http://pigpen.compbio.cs.cmu.edu:8080/view/docker-cellorganizer/job/docker-cellorganizer-demo3D47/) |      |           |
 
 The demos in the table above are the same demos included in the Matlab distribution.
