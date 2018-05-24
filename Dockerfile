@@ -5,18 +5,18 @@ MAINTAINER Ivan E. Cao-Berg <icaoberg@andrew.cmu.edu>
 LABEL Description="CellOrganizer"
 LABEL Vendor="Murphy Lab in the Computational Biology Department at Carnegie Mellon University"
 LABEL Web="http://murphylab.cbd.cmu.edu"
-LABEL Version="2.7.1"
+LABEL Version="2.7.2"
 ###############################################################################################
 
 ###############################################################################################
 # INSTALL CELLORGANIZER BINARIES
 WORKDIR /home/murphylab
 USER root
-RUN echo "Downloading CellOrganizer v2.7.1" && \
+RUN echo "Downloading CellOrganizer v2.7.2" && \
 	cd ~/ && \
-	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/cellorganizer-v2.7.1-binaries.tgz && \
-	tar -xvf cellorganizer-v2.7.1-binaries.tgz && \
-	rm cellorganizer-v2.7.1-binaries.tgz && \
+	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.2/cellorganizer-v2.7.2-binaries.tgz && \
+	tar -xvf cellorganizer-v2.7.2-binaries.tgz && \
+	rm cellorganizer-v2.7.2-binaries.tgz && \
 	mv cellorganizer-binaries /opt && \
 	chmod +x /opt/cellorganizer-binaries/img2slml && \
 	chmod +x /opt/cellorganizer-binaries/slml2img && \
@@ -31,9 +31,9 @@ RUN echo "Downloading CellOrganizer v2.7.1" && \
 ###############################################################################################
 USER murphylab
 RUN echo "Downloading models" && \
-	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.1/cellorganizer-v2.7.1-models.tgz && \
-	tar -xvf cellorganizer-v2.7.1-models.tgz && \
-	rm -f cellorganizer-v2.7.1-models.tgz
+	wget -nc --quiet http://www.cellorganizer.org/Downloads/v2.7/docker/v2.7.2/cellorganizer-v2.7.2-models.tgz && \
+	tar -xvf cellorganizer-v2.7.2-models.tgz && \
+	rm -f cellorganizer-v2.7.2-models.tgz
 
 COPY demos cellorganizer/demos
 USER root
