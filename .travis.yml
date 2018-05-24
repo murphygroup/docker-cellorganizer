@@ -17,7 +17,4 @@ script:
   - docker images
   - docker run -td murphylab/cellorganizer 
   - export ID=$(docker ps | awk '{ print $1,$2 }' | grep murphylab/cellorganizer | awk '{print $1}')
-  - docker exec --user root $ID sh -c "cd ./cellorganizer/demos/2D/demo2D00/ && bash demo2D00.sh"
-  - docker exec --user root $ID sh -c "cd ./cellorganizer/demos/2D/demo2D01/ && bash demo2D01.sh"
-  - docker exec --user root $ID sh -c "cd ./cellorganizer/demos/2D/demo2D02/ && bash demo2D02.sh"
-  - docker exec --user root $ID sh -c "cd ./cellorganizer/demos/2D/demo2D04/ && bash demo2D04.sh"
+  - docker rmi -f $(docker images --format '{{.Repository}}:{{.Tag}}' | grep 'murphylab/cellorganizer')
