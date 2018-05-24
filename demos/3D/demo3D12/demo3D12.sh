@@ -53,7 +53,6 @@ fi
 
 echo -e "pattern = 'LAMP2';
 dimensionality = '3D';
-options.protein.class = 'lysosome';
 options.protein.name = 'lamp2';
 options.nucleus.name = 'lamp2';
 options.cell.model = 'lamp2';
