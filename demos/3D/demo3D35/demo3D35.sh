@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# demo3D47
+# demo3D35
 #
-# This demo uses slml2model to display information from a valid model file
+# This demo uses slml2info to display information from a valid model file
 #
 # Input
 # ------
