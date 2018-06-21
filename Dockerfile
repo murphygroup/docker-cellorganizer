@@ -22,10 +22,12 @@ RUN echo "Downloading CellOrganizer v2.7.2" && \
 	chmod +x /opt/cellorganizer-binaries/slml2img && \
 	chmod +x /opt/cellorganizer-binaries/slml2report && \
 	chmod +x /opt/cellorganizer-binaries/slml2info && \
+	chmod +x /opt/cellorganizer-binaries/slml2slml && \
 	ln -s /opt/cellorganizer-binaries/img2slml /usr/local/bin/img2slml && \
 	ln -s /opt/cellorganizer-binaries/slml2img /usr/local/bin/slml2img && \
 	ln -s /opt/cellorganizer-binaries/slml2report /usr/local/bin/slml2report && \
-	ln -s /opt/cellorganizer-binaries/slml2info /usr/local/bin/slml2info
+	ln -s /opt/cellorganizer-binaries/slml2info /usr/local/bin/slml2info && \
+	ln -s /opt/cellorganizer-binaries/slml2slml /usr/local/bin/slml2slml
 ###############################################################################################
 
 ###############################################################################################
