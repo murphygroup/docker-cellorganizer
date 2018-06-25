@@ -1,7 +1,7 @@
 # docker-cellorganizer
 
 [![Build Status](https://travis-ci.org/icaoberg/docker-cellorganizer.svg?branch=master)](https://travis-ci.org/icaoberg/docker-cellorganizer)
-[![Release Status](https://img.shields.io/badge/release-v2.7.1-red.svg)](http://www.cellorganizer.org/)
+[![Release Status](https://img.shields.io/badge/release-v2.7.2-red.svg)](http://www.cellorganizer.org/)
 [![GitHub issues](https://img.shields.io/github/issues/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/issues)
 [![GitHub forks](https://img.shields.io/github/forks/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/network)
 [![GitHub stars](https://img.shields.io/github/stars/icaoberg/docker-cellorganizer.svg)](https://github.com/icaoberg/docker-cellorganizer/stargazers)
@@ -30,6 +30,16 @@ Model learning captures variation among cells in a collection of images. Images 
 These models can be conditional upon each other. For example, for a given synthesized cell instance, organelle position is dependent upon the cell and nuclear shape of that instance.
 
 Cell types for which generative models for at least some organelles have been built include human HeLa cells, mouse NIH 3T3 cells, and Arabidopsis protoplasts. Planned projects include mouse T lymphocytes and rat PC12 cells.
+
+### CellOrganizer v2.7.2
+
+#### Enhancements
+* Created method slml2slml. The method joins together multiple model files.
+* Updated methods for CellOrganizer for Galaxy.
+
+#### Fixes
+* Fixed several small issues that accelerate synthesis.
+* Fixed issues with the creation of OME.TIFFs with ROIs.
 
 ### CellOrganizer v2.7.1
 
