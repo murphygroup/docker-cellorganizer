@@ -9,12 +9,6 @@ services:
 branches:
   only:
     - master
-
-before_install:
-  - docker build -t murphylab/cellorganizer .
-
+    
 script:
-  - docker images
-  - docker run -td murphylab/cellorganizer 
-  - export ID=$(docker ps | awk '{ print $1,$2 }' | grep murphylab/cellorganizer | awk '{print $1}')
-  - docker rmi -f $(docker images --format '{{.Repository}}:{{.Tag}}' | grep 'murphylab/cellorganizer')
+  - docker build -t murphylab/cellorganizer .
